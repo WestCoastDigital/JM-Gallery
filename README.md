@@ -22,6 +22,9 @@ It adds a custom post type called galleries that has a description and gallery i
 
 ## FAQs
 
+#### Can I reorder the images?
+Just drag and drop them into any position you like.
+
 #### Can I create my own template?
 Yes! Just add a single-gallery.php to your theme/child theme and customise to your hearts content
 
