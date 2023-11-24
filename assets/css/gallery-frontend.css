@@ -1,11 +1,14 @@
 .jm-gallery {
+    display: -ms-grid;
     display: grid;
     grid-gap: 30px;
     padding-bottom: 100px;
+    -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
 }
 
 .jm-gallery .vertical {
+    -ms-grid-row-span: 2;
     grid-row: span 2;
 }
 
@@ -17,23 +20,32 @@
 
 .jm-gallery img {
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .jm-gallery .gallery-item:hover img {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
     .jm-gallery {
+        -ms-grid-columns: 1fr 30px 1fr;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width: 1024px) {
     .jm-gallery {
+        -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -76,7 +88,9 @@
 .jm-modal .next {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     color: #fff;
     font-size: 40px;
     font-weight: bold;
