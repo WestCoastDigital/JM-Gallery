@@ -33,3 +33,10 @@ Of course, just add title_tag='h3', change to what you want, in to your shortcod
 
 ## Can I hide the description when using the shortcode?
 Absolutely, just add description=false to your shortcode
+
+## How is it accessible?
+We have made it accessible by adding support to:
+1. open modal using enter key instead of clicking
+1. set the tab focus on open
+1. use arrows to scroll through images instead of clicking the navigation arrows
+1. use the escape key and reset focus to close modal instead of clicking on the close
