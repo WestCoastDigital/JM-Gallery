@@ -40,3 +40,6 @@ We have made it accessible by adding support to:
 1. set the tab focus on open
 1. use arrows to scroll through images instead of clicking the navigation arrows
 1. use the escape key and reset focus to close modal instead of clicking on the close
+
+## Is this theme or plugin dependant?
+No. I built this to be a stand alone plugin. It does not rely on any plugins or frameworks to function as everything is created and coded by myself, including the gallery field.
